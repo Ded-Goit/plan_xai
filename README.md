@@ -1,5 +1,7 @@
 # PlanXai
 
+🇺🇸 English | [🇺🇦 Українська](./README.ua.md)
+
 AI Operational Intelligence Platform for manufacturing and B2B companies.
 
 PlanXai helps businesses automate operational workflows, detect risks before failures happen, and manage company performance through a unified AI-powered command center.
@@ -25,10 +27,10 @@ The platform provides:
 
 The first MVP focuses on one powerful operational workflow:
 
-Meeting
-→ AI Summary
-→ Task Extraction
-→ Risk Detection
+Meeting  
+→ AI Summary  
+→ Task Extraction  
+→ Risk Detection  
 → Executive Dashboard
 
 ---
@@ -151,16 +153,16 @@ Meeting
 
 # 🧩 Core Architecture
 
-Meeting Upload
-↓
-AI Transcription
-↓
-AI Summary
-↓
-Task Extraction
-↓
-Risk Analysis
-↓
+Meeting Upload  
+↓  
+AI Transcription  
+↓  
+AI Summary  
+↓  
+Task Extraction  
+↓  
+Risk Analysis  
+↓  
 Dashboard Update
 
 ---
@@ -196,8 +198,23 @@ Build an AI-powered operational command center that looks and feels like a real 
 
 # 🛠️ Local Development
 
-## Install dependencies
+### 1. Prerequisites
+This project uses **pnpm** as a package manager. Make sure you have it installed:
+```bash
+# Install pnpm globally if you don't have it
+npm install -g pnpm
+```
 
+### 2. Installation
+Install the project dependencies and approve required build scripts (like `msw`):
 ```bash
 pnpm install
+pnpm approve-builds
 ```
+
+### 3. Run the Development Server
+Start the local server in development mode:
+```bash
+pnpm dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
