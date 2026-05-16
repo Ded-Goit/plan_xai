@@ -1,0 +1,14 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  "tailwindCSS.experimental.classRegex": [
+    ["className=\"([^\"]*)\"", "[^\\s]+"],
+    ["className={`([^`}]+)`}", "[^\\s]+"]
+  ]
+}
