@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# pnpm
+.pnpm-store
+
 # testing
 /coverage
 
@@ -22,6 +25,7 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
@@ -30,12 +34,56 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
+!.env.example
 
 # vercel
 .vercel
 
+# turbo
+.turbo
+
+# cache
+.cache
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# idea
+.idea
+
+# logs
+logs
+*.log
+
+# local databases
+*.sqlite
+*.db
+
+# temp
+tmp/
+temp/
+
+# eslint
+.eslintcache
+
+# stylelint
+.stylelintcache
+
+# generated
+dist/
+
+# uploads
+uploads/
+public/uploads/
+
+# OS generated
+ehthumbs.db
+Desktop.ini
