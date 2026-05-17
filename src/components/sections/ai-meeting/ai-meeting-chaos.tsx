@@ -13,7 +13,7 @@ export function AiMeetingChaos() {
   return (
     <section className="py-[100px] px-6" 
       style={{
-        background: 'linear-gradient(135deg, #EEF2FF 0%, #ffffff 50%, #EEF2FF 100%)',
+        background: 'linear-gradient(180deg, #ffffff 0%, #E8EEFF 50%, #ffffff 100%)',
       }}
     >
       <div className="max-w-7xl mx-auto">
