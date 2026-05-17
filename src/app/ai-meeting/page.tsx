@@ -8,6 +8,8 @@ import { AiMeetingArchitecture } from "@/components/sections/ai-meeting/ai-meeti
 import { AiMeetingTasks } from "@/components/sections/ai-meeting/ai-meeting-tasks";
 import { AiMeetingMarket } from "@/components/sections/ai-meeting/ai-meeting-market";
 import {AiMeetingAdvantages} from "@/components/sections/ai-meeting/ai-meeting-advantages";
+import {AiMeetingVision} from "@/components/sections/ai-meeting/ai-meeting-vision";
+
 
 export default function AiMeetingPage() {
   return (
@@ -22,6 +24,7 @@ export default function AiMeetingPage() {
       <AiMeetingTasks />
       <AiMeetingMarket />
       <AiMeetingAdvantages />
+      <AiMeetingVision />
       </main>
       <Footer />
     </>
