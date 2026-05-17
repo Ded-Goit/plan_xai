@@ -19,6 +19,7 @@ export default function HomePage() {
         <RolesSection />
         <AiMeetingAssistant />
         <HowItWorks />
+
       </main>
       
       <Footer />
