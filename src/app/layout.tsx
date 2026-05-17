@@ -1,24 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
+import {
+  inter,
+  lexend,
+  anta,
+  openSans,
+  inika,
+  plusJakarta,
+} from "./fonts";
 
 import "./globals.css";
 
 // Providers
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/sonner";
-import { SidebarProvider } from "@/components/ui/sidebar";
-
-const inter = Inter({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
+//import { Toaster } from "@/components/ui/sonner";
+//import { SidebarProvider } from "@/components/ui/sidebar";
 
 export const metadata: Metadata = {
   title: "PlanXAI",
@@ -32,7 +27,26 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="uk"
+      suppressHydrationWarning
+      className={`${inter.variable}
+        ${lexend.variable}
+        ${anta.variable}
+        ${openSans.variable}
+        ${inika.variable}
+        ${plusJakarta.variable} h-full antialiased`}
+    >
+      <body className="min-h-full bg-background text-foreground font-sans">
+        <TooltipProvider>          
+            {children}                    
+        </TooltipProvider>
+      </body>
+    </html>
+  );
+}
+/**return (
+    <html
+      lang="uk"
       suppressHydrationWarning
       className={`${inter.variable} ${geistMono.variable} h-full antialiased`}
     >
@@ -46,5 +60,4 @@ export default function RootLayout({
         </TooltipProvider>
       </body>
     </html>
-  );
-}
+  ); */
