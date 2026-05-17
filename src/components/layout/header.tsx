@@ -40,7 +40,8 @@ function Flag({ code }: { code: string }) {
   );
 }
 
-export default function Navbar() {
+
+export function Header() {
   const [langOpen, setLangOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState(languages[0]);
 
