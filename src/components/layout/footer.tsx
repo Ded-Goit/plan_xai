@@ -15,7 +15,7 @@ export function Footer() {
     const [showTeam, setShowTeam] = useState(false);
 
   return (
-    <footer className="px-6 py-10 border-t border-gray-200" style={{ background: '#ffffff' }}>
+    <footer id='footer' className="px-6 py-10 border-t border-gray-200" style={{ background: '#ffffff' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Top row */}

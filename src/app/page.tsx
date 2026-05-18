@@ -15,9 +15,9 @@ export default function HomePage() {
       <main>
         <Hero />
         <CtaSection />
-        <BusinessSection />
-        <RolesSection />
         <AiMeetingAssistant />
+        <RolesSection />
+        <BusinessSection />
         <HowItWorks />
 
       </main>
