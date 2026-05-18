@@ -124,7 +124,7 @@ export function Hero() {
           <div className="flex flex-col gap-3">
             {/* "Ai-Meeting" — веде на сторінку /meeting */}
             <Link
-              href="/meeting"
+              href="/ai-meeting"
               style={{
                 display: 'inline-block',
                 textAlign: 'center',
