@@ -79,7 +79,7 @@ export function Hero() {
           <div className="flex flex-col gap-3">
             {/* "Огляд проекту" — прокручує до секції #product */}
             <Link
-              href="https://www.youtube.com/watch?v=RtoAr6DsRws&feature=youtu.be"
+              href="https://youtu.be/9eZkoC_5YRM"
               style={{
                 display: 'inline-block',
                 textAlign: 'center',
