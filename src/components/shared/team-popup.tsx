@@ -141,42 +141,46 @@ export function TeamPopup({ onClose }: TeamPopupProps) {
         </div>
 
         {/* Team image — natural size, no forced height */}
-        <div style={{
-          width: '100%',
-          borderRadius: '16px',
-          overflow: 'hidden',
-          lineHeight: 0,         // ← removes gap under img
-        }}>
-          <img
-            src="/images/team-photo.webp"
-            alt="Команда planxAi"
-            style={{
-              width: '100%',
-              height: 'auto',    // ← natural height, no cropping
-              display: 'block',
-            }}
-          />
-        </div>
+        <div
+  style={{
+    width: '100%',
+    position: 'relative',      
+    borderRadius: '16px',
+    overflow: 'visible',       
+    lineHeight: 0,
+  }}
+>
+  <img
+    src="/images/team-photo.webp"
+    alt="Команда planxAi"
+    style={{
+      width: '100%',
+      height: 'auto',
+      display: 'block',
+      borderRadius: '16px',    
+    }}
+  />
 
-        {/* Round social buttons */}
-        <div style={{
-        position: 'absolute',
-        bottom: '-24px',
-        left: 0,
-        right: 0,
-        display: 'grid',
-        gridTemplateColumns: `repeat(${team.length}, 110px)`,  // ← matches image columns exactly
-        paddingLeft: '0px',
-        paddingRight: '0px',
-        }}>
-        {team.map((member, i) => (
-            <div key={i} style={{ display: 'flex', justifyContent: 'center' }}>
-            <SocialButton member={member} />
-            </div>
-        ))}
-        </div>
-    {/* Spacer so buttons aren't clipped by overflow:hidden */}
-    <div style={{ height: '34px' }} />
+  {/* Кнопки — половина висить над краєм фото */}
+  <div
+    style={{
+      position: 'absolute',
+      bottom: '-20px',         
+      left: 0,
+      right: 0,
+      display: 'grid',
+      gridTemplateColumns: `repeat(${team.length}, 1fr)`, 
+    }}
+  >
+    {team.map((member, i) => (
+      <div key={i} style={{ display: 'flex', justifyContent: 'center' }}>
+        <SocialButton member={member} />
+      </div>
+    ))}
+  </div>
+</div>
+
+<div style={{ height: '28px' }} />
 
       </div>
     </div>
