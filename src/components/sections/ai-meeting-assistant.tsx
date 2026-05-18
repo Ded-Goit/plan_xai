@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function AiMeetingAssistant() {
   const features = [
     {
@@ -19,7 +20,7 @@ export function AiMeetingAssistant() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-[#F0F4FF]">
+    <section id='ai-meeting-assistant' className="py-20 px-6 bg-[#F0F4FF]">
       <div className="max-w-7xl mx-auto">
 
         {/* Title */}
@@ -58,11 +59,13 @@ export function AiMeetingAssistant() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center">
+      <div className="flex justify-center">
+        <Link href="/ai-meeting">
           <button className="px-8 py-3 rounded-full border-2 border-blue-500 text-blue-500 text-base font-medium hover:bg-blue-500 hover:text-white transition-colors">
             Спробувати AI Meeting
           </button>
-        </div>
+        </Link>
+      </div>
 
       </div>
     </section>

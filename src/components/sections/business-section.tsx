@@ -35,7 +35,7 @@ const features = [
 
 export function BusinessSection() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section id='business' className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
 
         {/* Title */}

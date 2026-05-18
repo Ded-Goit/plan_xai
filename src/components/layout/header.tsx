@@ -18,9 +18,9 @@ const navLinks = [
   { label: 'Продукт', href: '#product' },
   { label: 'Як це працює', href: '#how-it-works' },
   { label: 'Ролі', href: '#roles' },
-  { label: 'Можливості', href: '#features' },
+  { label: 'Можливості', href: '#business' },
   { label: 'Ціни', href: '#pricing' },
-  { label: 'Про нас', href: '#about' },
+  { label: 'Про нас', href: '#footer' },
 ];
 
 const languages = [
