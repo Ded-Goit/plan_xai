@@ -46,7 +46,7 @@ export function AiMeetingHero() {
               Огляд проекту
             </Link>
              <Link
-              href="/demo"
+              href="https://youtu.be/9eZkoC_5YRM"
               className="px-6 py-2.5 rounded-[12px] bg-[#6C5CE7] text-white text-[14px] hover:bg-[#5a4bd1] transition-colors text-center"
             >
               Спробувати демо
