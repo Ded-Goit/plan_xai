@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -46,7 +47,7 @@ export function Hero() {
           </p>
         </div>
 
-        {/* Dashboard image — centered, overlapping both text and buttons */}
+        {/* Dashboard image */}
         <div
           className="absolute pointer-events-none"
           style={{
@@ -76,8 +77,12 @@ export function Hero() {
         >
           {/* Left buttons */}
           <div className="flex flex-col gap-3">
-            <button
+            {/* "Огляд проекту" — прокручує до секції #product */}
+            <Link
+              href="https://www.youtube.com/watch?v=RtoAr6DsRws&feature=youtu.be"
               style={{
+                display: 'inline-block',
+                textAlign: 'center',
                 fontSize: '18px',
                 fontWeight: 400,
                 padding: '10px 28px',
@@ -87,12 +92,18 @@ export function Hero() {
                 color: '#121B2A',
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
+                textDecoration: 'none',
               }}
             >
               Огляд проекту
-            </button>
-            <button
+            </Link>
+
+            {/* "Спробувати демо" — веде на сторінку /demo */}
+            <Link
+              href="/demo"
               style={{
+                display: 'inline-block',
+                textAlign: 'center',
                 fontSize: '18px',
                 fontWeight: 400,
                 padding: '10px 28px',
@@ -102,16 +113,21 @@ export function Hero() {
                 color: '#ffffff',
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
+                textDecoration: 'none',
               }}
             >
               Спробувати демо
-            </button>
+            </Link>
           </div>
 
           {/* Right gradient-border buttons */}
           <div className="flex flex-col gap-3">
-            <button
+            {/* "Ai-Meeting" — веде на сторінку /meeting */}
+            <Link
+              href="/meeting"
               style={{
+                display: 'inline-block',
+                textAlign: 'center',
                 fontSize: '18px',
                 fontWeight: 400,
                 padding: '10px 28px',
@@ -121,12 +137,18 @@ export function Hero() {
                 whiteSpace: 'nowrap',
                 background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91 0%, #89FFB2 50%, #1A0F91 100%) border-box',
                 border: '2.5px solid transparent',
+                textDecoration: 'none',
               }}
             >
               Ai-Meeting
-            </button>
-            <button
+            </Link>
+
+            {/* "Ai-помічник" — веде на сторінку /assistant */}
+            <Link
+              href="/assistant"
               style={{
+                display: 'inline-block',
+                textAlign: 'center',
                 fontSize: '18px',
                 fontWeight: 400,
                 padding: '10px 28px',
@@ -136,10 +158,11 @@ export function Hero() {
                 whiteSpace: 'nowrap',
                 background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91 0%, #89FFB2 50%, #1A0F91 100%) border-box',
                 border: '2.5px solid transparent',
+                textDecoration: 'none',
               }}
             >
               Ai-помічник
-            </button>
+            </Link>
           </div>
         </div>
 
