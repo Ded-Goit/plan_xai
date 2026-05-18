@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Anta } from 'next/font/google';
+import { useState } from "react";
+import { TeamPopup } from "@/components/shared/team-popup";
 
 const anta = Anta({ 
   weight: '400',
@@ -9,6 +12,8 @@ const anta = Anta({
 });
 
 export function Footer() {
+    const [showTeam, setShowTeam] = useState(false);
+
   return (
     <footer className="px-6 py-10 border-t border-gray-200" style={{ background: '#ffffff' }}>
       <div className="max-w-7xl mx-auto">
@@ -92,10 +97,18 @@ export function Footer() {
         {/* Bottom row */}
         <div className="flex items-center justify-between border-t border-gray-200 pt-6">
           <p className="text-[#121B2A] text-[14px]">© 2026 PlanxAi. All rights reserved.</p>
-          <p className="text-[#121B2A] text-[14px]">Команда дизайнерів та розробників сайту planxAi</p>
+                  <button
+          onClick={() => setShowTeam(true)}
+          className="text-gray-500 text-sm hover:text-[#6C5CE7] transition-colors"
+        >
+          Команда дизайнерів та розробників сайту planxAi
+        </button>
+
         </div>
 
       </div>
+        {showTeam && <TeamPopup onClose={() => setShowTeam(false)} />}
+
     </footer>
   );
 }   
