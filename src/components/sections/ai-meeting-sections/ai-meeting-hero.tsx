@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function AiMeetingHero() {
   return (
     <section className="pt-[150px] pb-20 px-6 bg-white">
@@ -37,12 +39,18 @@ export function AiMeetingHero() {
 
           {/* Left buttons */}
           <div className="flex flex-col gap-3">
-            <button className="px-6 py-2.5 rounded-[12px] border border-[#121B2A] text-[#121B2A] text-[14px] hover:bg-gray-50 transition-colors">
+            <Link
+              href="https://drive.google.com/file/d/133eELLSJSoCq-DgOtF9-LJKzbNLLXNPR/view"
+              className="px-6 py-2.5 rounded-[12px] border border-[#121B2A] text-[#121B2A] text-[14px] hover:bg-gray-50 transition-colors text-center"
+            >
               Огляд проекту
-            </button>
-            <button className="px-6 py-2.5 rounded-[12px] bg-[#6C5CE7] text-white text-[14px] hover:bg-[#5a4bd1] transition-colors">
+            </Link>
+             <Link
+              href="/demo"
+              className="px-6 py-2.5 rounded-[12px] bg-[#6C5CE7] text-white text-[14px] hover:bg-[#5a4bd1] transition-colors text-center"
+            >
               Спробувати демо
-            </button>
+            </Link>
           </div>
 
           {/* Spacer for center image area */}
@@ -50,24 +58,29 @@ export function AiMeetingHero() {
 
           {/* Right buttons */}
           <div className="flex flex-col gap-3">
-            <button
-              className="px-5 py-2 rounded-[12px] text-[14px] text-[#121B2A]"
+            <Link
+              href="/ai-meeting"
+              className="px-5 py-2 rounded-[12px] text-[14px] text-[#121B2A] text-center"
               style={{
-                background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91, #89FFB2, #1A0F91) border-box',
-                border: '4px solid transparent'
+                background:
+                  'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91, #89FFB2, #1A0F91) border-box',
+                border: '4px solid transparent',
               }}
             >
               Ai-Meeting
-            </button>
-            <button
-              className="px-5 py-2 rounded-[12px] text-[14px] text-[#121B2A]"
+            </Link>
+            
+            <Link
+              href="/ai-assistant"
+              className="px-5 py-2 rounded-[12px] text-[14px] text-[#121B2A] text-center"
               style={{
-                background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91, #89FFB2, #1A0F91) border-box',
-                border: '4px solid transparent'
+                background:
+                  'linear-gradient(white, white) padding-box, linear-gradient(135deg, #1A0F91, #89FFB2, #1A0F91) border-box',
+                border: '4px solid transparent',
               }}
             >
               Ai-помічник
-            </button>
+            </Link>
           </div>
 
         </div>
