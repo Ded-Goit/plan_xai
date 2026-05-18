@@ -11,7 +11,7 @@ import { navigationLinks } from "@/constants/navigation";
 
 export function Header() {
   return (
-    <header
+    <header id="how-it-works" 
       className="
         sticky
         top-0
