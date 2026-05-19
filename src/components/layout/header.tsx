@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { User} from 'lucide-react';
 import { Anta } from 'next/font/google';
 import { ChevronDown } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const anta = Anta({ 
   weight: '400',
@@ -17,9 +18,9 @@ const navLinks = [
   { label: 'Продукт', href: '#product' },
   { label: 'Як це працює', href: '#how-it-works' },
   { label: 'Ролі', href: '#roles' },
-  { label: 'Можливості', href: '#features' },
+  { label: 'Можливості', href: '#business' },
   { label: 'Ціни', href: '#pricing' },
-  { label: 'Про нас', href: '#about' },
+  { label: 'Про нас', href: '#footer' },
 ];
 
 const languages = [
@@ -110,13 +111,12 @@ export function Header() {
           </div>
 
           {/* Login */}
-          <Link
-            href="/login"
-            className="text-[16px] text-#121B2A-700 hover:text-blue-600 transition-colors flex items-center gap-1"
-          >
+          <Link href="/login">
+          <Button variant="ghost" className="rounded-2xl flex items-center gap-1">
             <User size={16} />
             Увійти
-          </Link>
+          </Button>
+        </Link>
 
         </div>
       </div>

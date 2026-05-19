@@ -49,7 +49,7 @@ const roles = [
 
 export function RolesSection() {
   return (
-    <section className="py-20 px-6 bg-[#F0F4FF]">
+    <section id="roles" className="py-20 px-6 bg-[#F0F4FF]">
       <div className="max-w-7xl mx-auto">
 
         <h2 className="text-center text-3xl font-semibold text-gray-900 mb-16">

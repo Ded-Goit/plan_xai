@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/header";
-import { HeroSection } from "@/components/sections/hero/hero-section";
+import { Hero } from "@/components/sections/hero-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Footer } from "@/components/layout/footer";
 import { BusinessSection } from "@/components/sections/business-section";
@@ -14,12 +14,14 @@ export default function HomePage() {
       <Header />
 
       <main>
-        <HeroSection />
+        <Hero />
         <CtaSection />
         <DemoResults />
         <BusinessSection />
         <RolesSection />
         <AiMeetingAssistant />
+        <RolesSection />
+        <BusinessSection />
         <HowItWorks />
       </main>
       
