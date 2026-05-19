@@ -1,3 +1,5 @@
+
+import { DemoModal } from "../demo/demo-modal";
 export function CtaSection() {
   return (
     <section className="py-20 px-6">
@@ -24,10 +26,12 @@ export function CtaSection() {
         </div>
 
         {/* CTA Button */}
-        <button className="px-8 py-3 rounded-full bg-[#6C5CE7] text-white text-base font-medium hover:bg-[#5a4bd1] transition-colors">
-          Спробувати демо
-        </button>
+        
+        <DemoModal />
       </div>
     </section>
   );
 }
+/**<button className="px-8 py-3 rounded-full bg-[#6C5CE7] text-white text-base font-medium hover:bg-[#5a4bd1] transition-colors">
+          Спробувати демо
+        </button> */
